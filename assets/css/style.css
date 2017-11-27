@@ -46,11 +46,10 @@ header {
 
 .crystal-section {
   margin-top: 15px; }
-
-.crystal {
-  max-height: 150px;
-  max-width: 150px;
-  margin: 10px 10px; }
+  .crystal-section .crystal {
+    max-height: 150px;
+    max-width: 150px;
+    margin: 10px 10px; }
 
 .guess-area {
   color: white;
@@ -63,7 +62,7 @@ header {
   margin: 10px 0px;
   padding: 10px 10px; }
 
-.score-area {
+#score-area {
   background: #73aaa5;
   font-size: 2.8em;
   margin: 10px 0px;

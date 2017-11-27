@@ -16,7 +16,7 @@
     <div class="container">
         <header>
             <h1>Crystal Collector!</h1>
-        </header>      
+        </header>
         <div class="instructions">
             <br>
             <p>You will be given a random number at the start of the game.</p>
@@ -39,25 +39,33 @@
             <div class="wins-losses">
                 <p>Wins: <span id="wins">0</span></p>
                 <p>Losses: <span id="losses">0</span></p>
-            </div> 
+            </div>
         </div>
 
         <!-- The 'click-able' crystals -->
         <div class="crystal-section">
-            <img src="assets/images/blue-gem.png" alt="Crystal-1" class="crystal" id="c1">
-            <img src="assets/images/yellow-gem.png" alt="Crstal-2" class="crystal" id="c2">
-            <img src="assets/images/green-gem.png" alt="Crystal-3" class="crystal" id="c3">
-            <img src="assets/images/purple-gem.png" alt="Crystal-4" class="crystal" id="c4">
+
+          <input type="image" src="assets/images/blue-gem.png" alt="Crystal-1" class="crystal" id="c1" />
+
+          <input type="image" src="assets/images/yellow-gem.png" alt="Crstal-2" class="crystal" id="c2" />
+
+          <input type="image" src="assets/images/green-gem.png" alt="Crystal-3" class="crystal" id="c3" />
+
+          <input type="image" src="assets/images/purple-gem.png" alt="Crystal-4" class="crystal" id="c4"/>
+
         </div>
 
         <!-- Current total score -->
         <div class="guess-area">
             <p class="number-area">Your total score is: </p>
-            <div class="score-area">0</div>
+            <div id="score-area">0</div>
         </div>
     </div>
 
     <script src="assets/javascript/game.js"></script>
+    <script type="text/javascript">
+      getRandomNumbers();
+    </script>
 </body>
 
 </html>
