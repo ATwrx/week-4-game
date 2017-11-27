@@ -1,7 +1,80 @@
-h1 {
-    color: red;
+
+// Top Section
+header {
+    background: orange;
+    color: white;
+    display: inline-block;
+    padding: 30px 10px;
+    margin: 10px 10px;
+    font-size: 3em;
+    font-weight: bold;
+}
+.instructions {
+    width:700px;
+    color: green;
+    background: rgb(218, 233, 6);
+    font-size: 1.3em;
+    padding: 15px 5px;
+    margin: 10px 10px;
+    height: 400px;
+    font-weight: bolder;
+}
+
+// Above Crystals
+.top-game-area {
+    width: 550px;
+    margin: 10px 10px;
+}
+.random-number-area {
+    height: 200px;
+    width: 400px;
+    background: rgb(0, 200, 0);
+    display: inline-block;
+}
+#random-number {
+    font-size: 2.6em;
+    color: rgb(0, 0, 175);
+    font-weight: bold;
+    padding: 10px 10px; 
+}
+.wins-losses {
+    height: 200px;
+    float: right;
+    background: rgb(193, 193, 251);
+    padding: 0px 5px;
+}
+.wins-losses p {
+    font-size: 1.4em;
+    padding: 15px 4px;
+    margin: 5px 0px;
+}
+
+// Crystals
+.crystal-section {
+    margin-top: 15px;
 }
 .crystal {
-    max-height: 100px;
-    max-width: 100px;
+    max-height: 150px;
+    max-width: 150px;
+    margin: 10px 10px;
+}
+
+// Below Crystals
+.guess-area {
+    color: white;
+    margin: 10px 10px;
+    width: 550px;
+}
+.number-area {
+    background: rgb(115, 170, 165);
+    font-size: 1.4em;
+    margin: 10px 0px;
+    padding: 10px 10px;
+}
+.score-area {
+    background: rgb(115, 170, 165);
+    font-size: 2.8em;
+    margin: 10px 0px;
+    height: 200px;
+    padding: 10px 10px;
 }
