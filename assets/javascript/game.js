@@ -15,7 +15,7 @@ function getRandomNumbers() {
   $("#c4").attr("value", getCrystalNumbers());
 }
 
-// Sets a random number between 1 & 12
+// Returns a random number between 1 & 12
 function getCrystalNumbers() {
   var crystalVal = Math.floor(Math.random() * 12 + 1);
   return crystalVal;
@@ -36,7 +36,7 @@ function updateScore() {
   }
 }
 
-// click functions
+// The click event listener
 $(".crystal").click(function() {
   var num = $(this).val();
   scoreCounter += parseInt(num);
