@@ -5,7 +5,7 @@ var scoreCounter = 0;
 // Assign random number to guees & begin the game
 function getRandomNumbers() {
   scoreCounter = 0;
-  $("#score-area").html(scoreCounter);
+  $("#current-score").html(scoreCounter);
   randomNumber = Math.floor(Math.random() * 100 + 20);
   $("#random-number").html(randomNumber);
   $("#c1").attr("value", getCrystalNumbers());
@@ -36,7 +36,7 @@ function updateScore() {
 $(".crystal").click(function() {
   var num = $(this).val();
   scoreCounter += parseInt(num);
-  $("#score-area").html(scoreCounter);
+  $("#current-score").html(scoreCounter);
   updateScore();
   console.log(num);
 });
