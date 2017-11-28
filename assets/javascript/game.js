@@ -2,7 +2,8 @@ var wins = 0;
 var losses = 0;
 var randomNumber = 0;
 var scoreCounter = 0;
-// Assign random number to guees & begin the game
+
+// Assign random number to guess field & init the game
 function getRandomNumbers() {
   scoreCounter = 0;
   $("#current-score").html(scoreCounter);
@@ -14,11 +15,13 @@ function getRandomNumbers() {
   $("#c4").attr("value", getCrystalNumbers());
 }
 
+// Sets a random number between 1 & 12
 function getCrystalNumbers() {
   var crystalVal = Math.floor(Math.random() * 12 + 1);
   return crystalVal;
 }
 
+// Tests the score after each click
 function updateScore() {
   if (scoreCounter < randomNumber) {
     return;
@@ -33,10 +36,10 @@ function updateScore() {
   }
 }
 
+// click functions
 $(".crystal").click(function() {
   var num = $(this).val();
   scoreCounter += parseInt(num);
   $("#current-score").html(scoreCounter);
   updateScore();
-  console.log(num);
 });
